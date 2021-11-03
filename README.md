@@ -1,5 +1,8 @@
 # A TensorFlow implementation of DeepMind's WaveNet paper
 
+Current setup:
+`python train.py --data_dir=../samples --silence_threshold 0.1 --batch_size 1 --checkpoint_every 100 --learning_rate 0.002`
+
 [![Build Status](https://travis-ci.org/ibab/tensorflow-wavenet.svg?branch=master)](https://travis-ci.org/ibab/tensorflow-wavenet)
 
 This is a TensorFlow implementation of the [WaveNet generative neural
