@@ -1,7 +1,11 @@
 # A TensorFlow implementation of DeepMind's WaveNet paper
 
 Current setup:
-`python train.py --data_dir=../samples --silence_threshold 0.1 --batch_size 1 --checkpoint_every 100 --learning_rate 0.002`
+`python train.py --data_dir=./samples --silence_threshold 0.01 --batch_size 1 --checkpoint_every 100 --learning_rate 0.002`
+
+`python train_cloud.py --data_dir=gs://dream-maschine-samples/1 --silence_threshold 0.01 --batch_size 1 --checkpoint_every 100 --learning_rate 0.002`
+
+`python generate.py --samples 32000 --save-every 1000 logdir/train/2017-02-13T16-45-34/model.ckpt-80000`
 
 [![Build Status](https://travis-ci.org/ibab/tensorflow-wavenet.svg?branch=master)](https://travis-ci.org/ibab/tensorflow-wavenet)
 
